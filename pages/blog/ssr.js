@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 function PageSSR({ data }) {
@@ -9,6 +10,9 @@ function PageSSR({ data }) {
           <Image src={item.image} alt={item.title} width={500} height={500} />
           <p>{item.title}</p>
           <p>{item.description}</p>
+          <Link href={`/blog/post/${item.id}`}>
+            <button>View</button>
+          </Link>
         </div>
       ))}
     </div>
