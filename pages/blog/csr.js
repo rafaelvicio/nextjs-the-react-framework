@@ -7,13 +7,17 @@ function PageSSG() {
   const [isLoading, setLoading] = useState(false)
 
   useEffect(() => {
-    setLoading(true)
-    fetch('/api/posts')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data)
-        setLoading(false)
-      })
+    async function loadData() {
+      setLoading(true)
+
+      const response = await fetch('/api/posts')
+      const data = await response.json()
+
+      setData(data)
+      setLoading(false)
+    }
+
+    loadData()
   }, [])
 
   if (isLoading) return <p>Loading...</p>
