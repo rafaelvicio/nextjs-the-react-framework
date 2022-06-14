@@ -7,7 +7,6 @@ export default function Home() {
       <Head>
         <title>Next Blog</title>
       </Head>
-
       <main>
         <ul>
           <li>

@@ -7,6 +7,8 @@ function sleep(ms) {
 }
 
 export default async function handler(req, res) {
+  const { id } = req.query
+
   const posts = [
     {
       id: 0,
@@ -41,7 +43,9 @@ export default async function handler(req, res) {
     },
   ]
 
+  const post = posts.find((item) => item.id == id)
+
   await sleep(1000)
 
-  res.status(200).json(posts)
+  res.status(200).json(post)
 }
