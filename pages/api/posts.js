@@ -19,7 +19,7 @@ export default async function handler(req, res) {
       link:
         'https://blog.novatics.com.br/brand-experience-o-que-te-faz-se-sentir-junto-mesmo-estando-longe-1ee6432bf70d',
       Author: 'Maria Antonia Zanta Nobre',
-      image: 'https://miro.medium.com/max/1400/1*0zfcQXAXqUQQbiowHNS5-w.jpeg',
+      image: '/1.png',
     },
     {
       id: 1,
@@ -29,8 +29,7 @@ export default async function handler(req, res) {
       link:
         'https://blog.novatics.com.br/desbravando-o-mundo-das-facilita%C3%A7%C3%B5es-completamente-remotas-a816927903f3',
       Author: 'Gabriel Corá',
-      image:
-        'https://cdn-images-1.medium.com/max/2400/gradv/29/81/30/darken/25/1*Zf1vPemYQdWiuAHVCT14Hw.png',
+      image: '/2.png',
     },
     {
       id: 2,
@@ -40,8 +39,7 @@ export default async function handler(req, res) {
       link:
         'https://blog.novatics.com.br/o-que-%C3%A9-bpmn-e-como-ela-pode-te-ajudar-a-ser-um-dev-melhor-9d41ad55003e',
       Author: 'Matheus Gonçalves',
-      image:
-        'https://cdn-images-1.medium.com/max/2400/gradv/29/81/30/darken/25/1*B6SPynOhzAOfHNBBS3t0CQ.png',
+      image: '/3.png',
     },
   ]
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
+import Image from 'next/image'
 
 function PageSSG() {
   const [data, setData] = useState(null)
@@ -22,6 +22,7 @@ function PageSSG() {
     <div>
       {data.map((item) => (
         <div key={item.id}>
+          <Image src={item.image} alt={item.title} width={500} height={500} />
           <p>{item.title}</p>
           <p>{item.description}</p>
         </div>
